@@ -1,0 +1,43 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#outer {
+    font-size: 36px;
+    margin: 20px;
+    padding-top: 20px;
+    background-color: aquamarine;
+}
+
+#inner {
+    font-size: 9px;
+    margin: 30px;
+    padding-left: 40px;
+    background-color: rgb(14, 221, 166);
+}
+
+#outer > h1 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+#outer > p {
+    font-style: italic;
+    text-transform: uppercase;
+    color: yellowgreen;
+}
+
+#inner > h1 {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: royalblue;
+}
+
+#inner > p {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: rgb(26, 17, 2);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .container {
+            margin: 200px;
+            display: flex;
+          }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right,#5c6706, rgba(13, 207, 165, 0.467));
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .text{
+            font-size: larger;
+            text-align: center;
+            color: azure;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        /*A 2D rotation of 45 degrees on hover*/
+        .Box2{
+            margin-left: 40px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            color: azure; 
+            background-color: #f2b603; 
+            transition: transform 0.5s ease-in-out ;
+        }
+
+        /*A 2D rotation of 45 degrees on hover*/
+        .Box2:hover{
+            background-color: #03f217;
+            transform: rotate(45deg);
+        }
+
+        /*A 3D perspective transformation on hover, such as rotating the box on its Y-axis by 180 degrees*/
+        .Box3 {
+            margin-left: 40px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            color: azure; 
+            background-color: #0612f1;
+            transform-style: preserve-3d; 
+            transition: transform 1s ease-in-out; 
+          }
+          
+        .Box3:hover {
+            transform: rotateY(180deg); 
+            background-color: #c1fe09;
+        }
+
+        /*A 3D perspective transformation on click, such as rotating the box on its Y-axis by 180 degrees*/
+        .Box4 {
+            margin-left: 40px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            color: azure;
+            background-color: #b31cb8;
+            transform-style: preserve-3d; 
+            cursor: pointer; 
+            transition: transform 1s ease-in-out;
+          }
+          
+          .Box4:active {
+            background-color: rgb(7, 199, 252);
+            transform: rotateY(180deg); 
+          }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p class="text">Box 1</p>
+        </div>
+        <div class="Box2">Box 2</div>
+        <div class="Box3">Box 3</div>
+        <div class="Box4">Box 4</div>
+
+    </div>
+    
+</body>
+</html>
+<!-- 1.Changing the values of the box-shadow property, 
+    such as offset, blur radius, and colour, can change the perceived depth of the box. 
+    Increasing the blur radius can produce a softer, more diffused shadow,
+     creating the illusion of a greater distance between the box and its background. 
+     Adjusting the offset can alter the direction from which the light source appears to be casting the shadow,
+      influencing the perceived depth.
+    
+      2.Applying a linear gradient to an element creates a smooth transition between two or more specified colors. 
+      This can add depth, dimension, and visual interest to the element. Unlike a solid background color, which remains uniform throughout,
+       a linear gradient blends colors seamlessly, creating a dynamic appearance that can enhance the overall aesthetic of the element.
+
+       3. Applying a 2D rotation rotates the element along the plane of the screen, affecting only its appearance in two dimensions. 
+       On the other hand, a 3D transformation introduces depth by allowing rotation along additional axes, such as the X, Y, and Z axes. 
+       The presence of perspective in a 3D transformation affects the visual perception of depth and distance. Elements appear smaller as they move away
+        from the viewer and larger as they move closer, creating a more realistic and immersive visual experience.
+
+        4. The CSS transition property is crucial for creating visually appealing animations, allowing gradual changes over time.
+         It's important to balance duration, timing function, and easing for a natural, intuitive experience, and optimize transitions 
+         for performance across different devices and browsers.
+    
+    
+    -->

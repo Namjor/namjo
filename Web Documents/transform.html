@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transform Example</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    margin: 20px;
+  }
+  
+  /* move( x and y even when can do it z) */
+  .translate {
+    transform: translate(50px, 50px);
+  }
+  
+  .rotate {
+    transform: rotate(45deg);
+  }
+  
+  /* Changing of shapes */
+  .scale {
+    transform: scale(1.5, 1.5);
+  }
+  
+  /* change in angle of x and y where it will let to change of shape */
+  .skew {
+    transform: skew(30deg, 30deg);
+  }
+  
+  /* matrix includes all the above transformation */
+  .matrix {
+    transform: matrix(1, 0.577, 0.577, 1, 0, 0);
+  }
+</style>
+<body>
+<div class="box">Original</div>
+  <div class="box translate">Translate</div>
+  <div class="box rotate">Rotate</div>
+  <div class="box scale">Scale</div>
+  <div class="box skew">Skew</div>
+  <div class="box matrix">Matrix</div>
+</body>
+</html>
